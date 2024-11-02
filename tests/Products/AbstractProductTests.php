@@ -19,4 +19,15 @@ trait AbstractProductTests
 
         $this->assertEquals(9, $product->getSellIn());
     }
+
+    public function testQualityRange(): void
+    {
+        $product = $this->createProduct("Test Product", 10, 20);
+
+        $product->modifyQuality(100);
+        $this->assertEquals(50, $product->getQuality());
+
+        $product->modifyQuality(-100);
+        $this->assertEquals(0, $product->getQuality());
+    }
 }
