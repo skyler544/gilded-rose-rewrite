@@ -4,7 +4,7 @@ Main: composer
 	php src/Main.php
 
 test: composer
-	vendor/bin/phpunit tests
+	composer test
 
 composer: vendor
 

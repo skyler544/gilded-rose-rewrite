@@ -9,5 +9,8 @@
     "psr-4": {
       "GildedRose\\": ["src/", "tests/"]
     }
+  },
+  "scripts": {
+    "test": "phpunit tests"
   }
 }
