@@ -13,7 +13,7 @@ vendor: composer.json composer.lock
 	touch vendor
 
 style-lint: composer
-	vendor/bin/php-cs-fixer fix src
+	composer style-lint
 
 clean:
 	rm -rf vendor/
