@@ -1,0 +1,13 @@
+{
+  "name": "technikum/gilded-rose-rewrite",
+  "type": "project",
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.64",
+    "phpunit/phpunit": "^11.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "GildedRose\\": ["src/", "tests/"]
+    }
+  }
+}
