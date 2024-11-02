@@ -15,7 +15,7 @@ trait AbstractProductTests
     public function testDecreaseSellIn(): void
     {
         $product = $this->createProduct("Test Product", 10, 20);
-        $product->decreaseSellIn();
+        $product->modifySellIn();
 
         $this->assertEquals(9, $product->getSellIn());
     }

@@ -11,9 +11,9 @@ abstract class AbstractProduct
     ) {
     }
 
-    public function decreaseSellIn(): void
+    public function modifySellIn(int $delta = -1): void
     {
-        $this->sellIn -= 1;
+        $this->sellIn += $delta;
     }
 
     public function modifyQuality(int $delta): void
