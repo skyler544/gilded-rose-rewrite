@@ -1,13 +1,19 @@
 all: Main
 
-Main:
+Main: composer
 	php src/Main.php
 
-test:
+test: composer
 	vendor/bin/phpunit tests
 
-composer:
-	composer install
+composer: vendor
 
-style-lint:
+vendor: composer.json composer.lock
+	composer install
+	touch vendor
+
+style-lint: composer
 	vendor/bin/php-cs-fixer fix src
+
+clean:
+	rm -rf vendor/
