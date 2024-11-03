@@ -14,6 +14,6 @@ class Main
     }
 }
 
-if (php_sapi_name() == "cli" && isset($argv) && basename(__FILE__) == basename($argv[0])) {
+if (PHP_SAPI === 'cli') {
     Main::main();
 }
