@@ -2,8 +2,6 @@
 
 namespace GildedRose\Products;
 
-use PHPUnit\Framework\TestCase;
-
 trait AbstractProductTests
 {
     abstract protected function createProduct(
