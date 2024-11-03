@@ -18,4 +18,8 @@ class GildedRose
     {
         echo $brie->getName();
     }
+
+    // TODO product cart function
+    // TODO main application loop
+    // TODO basic keyboard interface?
 }
