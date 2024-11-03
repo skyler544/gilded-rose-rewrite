@@ -13,5 +13,6 @@ The included Makefile provides a quick interface to setting up and running the p
 * `make` :: Run the application.
 * `make test` :: Test the application.
 * `make composer` :: Install dependencies and generate autoloads.
+* `make autoload` :: Unconditionally generate autoloads.
 * `make style-lint` :: Fix code style (PSR-1 and PSR-12).
 * `make clean` :: Remove external code from the project.
