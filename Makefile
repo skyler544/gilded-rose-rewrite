@@ -11,6 +11,9 @@ composer: vendor
 vendor: composer.json composer.lock
 	composer install
 
+autoload: composer
+	composer dump-autoload
+
 style-lint: composer
 	composer style-lint
 
