@@ -5,7 +5,7 @@ namespace GildedRose\Products;
 abstract class AbstractProduct
 {
     public function __construct(
-        private string $name,
+        private readonly string $name,
         private int $sellIn,
         private int $quality
     ) {
