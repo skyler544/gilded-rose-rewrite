@@ -15,6 +15,7 @@ class ProductFactory
     ): AbstractProduct {
         return match ($name) {
             'Aged Brie' => new AgedBrie($name, $sellIn, $quality),
+            // TODO implement more product types
             default => throw new InvalidArgumentException("Unknown product type: $name")
         };
     }
